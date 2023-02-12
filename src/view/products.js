@@ -15,12 +15,12 @@ export default function Productos(props) {
 
 return (
                 <div class="col-lg-6 menu-item "  data-categoria={props.categoria}>
-                   <Link to={`/detail/${props.id}`} style={{ textDecoration: 'none' }}> 
+                   {/* <Link to={`/detail/${props.id}`} style={{ textDecoration: 'none' }}>  */}
                    <img src={props.img} class="menu-img" /> <span class="categoria">{props.categoria}</span>
                   
                     <div  class="menu-content">
-                        <a>{props.nombre} </a>  <span>$ {props.price}</span>
-                    </div> </Link>
+                        <a>{props.nombre} </a>  <span>$ {props.price}</span> </div>
+                    {/* </Link> */}
                     <div  class="menu-ingredients">
                         {props.ingredients}  <ItemCount img={props.img} categoria={props.categoria} nombre={props.nombre} price={props.price}  stock={props.stock} initial={1} id={props.id} />
                     </div>     
