@@ -56,13 +56,22 @@ const useInitialState = (props) => {
     }
 
     const deleteCartById = (id) => {
-        const newCart = [...cart.card];
-        let index = newCart.findIndex(el => el.id === id);
 
-        newCart.splice(index, 1);
-
-        setCart({
-            card:[...newCart]});
+        setCart(prevCart => {
+            const newCart = [...prevCart.card];
+            const index = newCart.findIndex(item => item.id === id.id);
+            if (index !== -1) {
+              newCart.splice(index, 1);
+            }
+            return { card: newCart };
+          });
+      
+        // let index = cart.card.findIndex(el => el.id === id);
+        // const newCart = [...cart.card];
+        // newCart.splice(index, 1);
+        
+        // setCart({
+        //     card:[...newCart]});
     }
 
     const deleteCart = () => {

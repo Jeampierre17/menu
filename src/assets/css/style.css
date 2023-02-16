@@ -128,6 +128,47 @@ h6 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+
+  #navbar.active {
+    right: 0px;
+}
+
+#navbar {
+  display: flex !important;
+  padding: 80px 0 0 10px;
+  transition: 0.3s;
+  top: 63px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: fixed;
+  top: 63px;
+  height: 100vh;
+  width: 300px;
+  right: -300px;
+  background-color: #28251f;
+  box-shadow: 0 40px 60px rgb(0 0 0 / 2%);
+  z-index: 999999 !important;
+  transition: all 0.3s ease-in-out;
+  overflow: visible;
+}
+#navbar li {
+  margin-bottom: 25px;
+}
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#close {
+  display: initial !important;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #fff;
+  font-size: 24px;
+}
 }
 
 /*--------------------------------------------------------------
@@ -196,7 +237,7 @@ h6 {
   border-bottom: 1px solid #37332a;
 }
 
-#header .logo {
+#header .logoo {
   font-size: 28px;
   margin: 0;
   padding: 0;
@@ -207,11 +248,11 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-#header .logo a {
+#header .logoo a {
   color: #fff;
 }
 
-#header .logo img {
+#header .logoo img {
   max-height: 40px;
 }
 
@@ -650,7 +691,7 @@ h6 {
 #add{
   margin-right: 20px;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 27px;
   color: #eee;
  
  
@@ -1116,7 +1157,7 @@ section {
   position: relative;
   z-index: 3;
   padding-left: 10px;
-  font-weight: 600;
+  font-weight: 700;
   color: #cda45e;
 }
 
@@ -2119,6 +2160,7 @@ button.normal {
 
 .delete{
   color: #eee;
+  cursor: pointer;
 }
 
 .end {
@@ -2182,6 +2224,11 @@ button.normal {
 .pedido{
   letter-spacing: 3px;
   padding: 10px 0px !important;
+}
+
+#navbar {
+  display: flex;
+
 }
 /* .oculta {
   display: none !important;

@@ -45,8 +45,8 @@ function App() {
             <div class="container d-flex justify-content-center justify-content-md-between">
 
               <div class="contact-info d-flex align-items-center">
-                <i class="bi bi-phone d-flex align-items-center"><span>+54 9 5589 55488</span></i>
-                <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mar-Dom: 11AM - 23PM</span></i>
+                <i class="bi bi-phone d-flex align-items-center"><span>MESA N° 8</span></i>
+                <i class="bi bi-clock d-flex align-items-center ms-4"><span>SERVICIO MOZO </span></i>
               </div>
 
               <div class="languages d-none d-md-flex align-items-center">
@@ -62,12 +62,12 @@ function App() {
           <header id="header" class="fixed-top d-flex align-items-cente">
             <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
-              <h1 class="logo me-auto me-lg-0"><Link class="nav-link scrollto active" to='/'>Budaty</Link></h1>
+              <h1 class="logoo me-auto me-lg-0"><Link class="nav-link scrollto active" to='/'>Budaty</Link></h1>
 
-              <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid" /></a>
+              <a href="index.html" class="logoo me-auto me-lg-0"><img  src="assets/img/logo.png" alt="" class="img-fluid" /></a>
 
-              <nav id="navbar" class="navbar order-last order-lg-0">
-                <ul>
+              <nav class="navbar order-last order-lg-0">
+                <ul  id="navbar" className={active === 'active' ? 'active' : ''}  >
                   <li><Link className={active === 'inicio' ? 'nav-link scrollto active' : 'nav-link scrollto'}
                     onClick={() => handleClick('inicio')} to='/'>Inicio</Link></li>
 
@@ -107,13 +107,28 @@ function App() {
                   <li><Link className={active === 'contacto' ? 'nav-link scrollto active' : 'nav-link scrollto'}
                     to="/contacto"
                     onClick={() => handleClick('contacto')}>Contacto</Link></li>
-
+                   <a id="close" onClick={() => handleClick('')}><span class="material-icons-outlined">
+                    close
+                    </span></a>
                 </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
+                <i onClick={() => handleClick('active')} class="bi bi-list mobile-nav-toggle" ></i>
               </nav>
               <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a>
 
             </div>
+
+
+            {/* <ul id="navbar" className={active === 'active' ? 'active' : ''}  onClick={() => handleClick('active')} >
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a href="shop.html">Productos</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li id="lg-bag"><a href="" id="shop"><span class="material-icons-outlined">shopping_bag</span></a></li>
+                <a href="#" id="close"><span class="material-icons-outlined">
+                    close
+                    </span></a>
+
+            </ul> */}
           </header>
 
 

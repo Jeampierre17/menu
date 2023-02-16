@@ -17,8 +17,9 @@ const sumaTotal = () => {
 let qty = 0; 
 const rest = -1;
 
-function revomeProdu(produ) {
+const revomeProdu = produ => {
     deleteCartById(produ);
+    console.log(produ);
 }
 
 
@@ -64,7 +65,7 @@ cart.card.map((props) => (
                 </div>
                 
                 <h6 class="precio">${props.price*props.qty}</h6>
-                <div class="delete" onClick={(props) => {deleteCartById(props.id);}} >
+                <div class="delete" onClick={() => revomeProdu(props)} >
                 <span class="material-symbols-outlined">
                 highlight_off
                 </span>
