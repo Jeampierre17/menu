@@ -508,9 +508,9 @@ function App() {
                     <div class="footer-info">
                       <h3>Budaty</h3>
                       <p>
-                        A108 Adam Street <br />
-                        NY 535022, USA<br /><br />
-                        <strong>Phone:</strong> +1 5589 55488 55<br />
+                        AV 9 de Julio 1990, <br />
+                        CABA<br /><br />
+                        <strong>Telefóno:</strong> +1 5589 55488 55<br />
                         <strong>Email:</strong> info@example.com<br />
                       </p>
                       <div class="social-links mt-3">
@@ -524,16 +524,15 @@ function App() {
                   </div>
 
                   <div class="col-lg-2 col-md-6 footer-links">
-                    <h4>Useful Links</h4>
+                    <h4>Enlaces Útiles</h4>
                     <ul>
-                      <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                      <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                      <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                      <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                      <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                      <li><i class="bx bx-chevron-right"></i><Link to='/'>Inicio</Link></li>
+                      <li><i class="bx bx-chevron-right"></i><Link to='/menu'>Menú</Link></li>
+                      <li><i class="bx bx-chevron-right"></i> <Link to='/especial'>Especial</Link></li>
+                      <li><i class="bx bx-chevron-right"></i> <Link to='/evento'>Evento</Link></li>
                     </ul>
                   </div>
-
+{/* 
                   <div class="col-lg-3 col-md-6 footer-links">
                     <h4>Our Services</h4>
                     <ul>
@@ -543,13 +542,13 @@ function App() {
                       <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
                       <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
                     </ul>
-                  </div>
+                  </div> */}
 
                   <div class="col-lg-4 col-md-6 footer-newsletter">
-                    <h4>Our Newsletter</h4>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    <h4>Ofertas y Novedades</h4>
+                    <p>Recibí actualizaciones de ofertas especiales</p>
                     <form action="" method="post">
-                      <input type="email" name="email" /><input type="submit" value="Subscribe" />
+                      <input type="email" name="email" /><input type="submit" value="Subscribete" />
                     </form>
 
                   </div>
@@ -560,10 +559,10 @@ function App() {
 
             <div class="container">
               <div class="copyright">
-                &copy; Copyright <strong><span>Restaurantly</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>MenuAdmi</span></strong>. Derechos Reservados
               </div>
               <div class="credits">
-                <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                <a href="https://bootstrapmade.com/">JEAMPIERRE GONZÁLEZ</a>
               </div>
             </div>
           </footer>
